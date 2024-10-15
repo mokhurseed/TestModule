@@ -1,3 +1,5 @@
+import org.gradle.api.publish.maven.MavenPublication
+
 plugins {
     alias(libs.plugins.android.library)
     alias(libs.plugins.kotlin.android)
@@ -33,6 +35,18 @@ android {
     }
 }
 
+/*afterEvaluate {
+    publishing {
+        publications {
+            productionRelease(MavenPublication) {
+                from components.productionRelease
+                        groupId = 'com.my.group'
+                artifactId = 'id'
+                version = Config.libraryVersion
+            }
+        }
+    }
+}*/
 dependencies {
 
     implementation(libs.androidx.core.ktx)
@@ -42,3 +56,7 @@ dependencies {
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
 }
+
+
+
+// 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
