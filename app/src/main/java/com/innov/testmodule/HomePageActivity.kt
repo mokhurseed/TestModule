@@ -3,7 +3,7 @@ package com.innov.testmodule
 import android.content.Intent
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
-import com.innov.geotracking.presentation.geo_tracking.GeoTrackingActivity
+import com.innov.mylibrary.LibConstant
 import com.innov.testmodule.databinding.ActivityHomePageBinding
 
 class HomePageActivity : AppCompatActivity() {
@@ -15,10 +15,10 @@ class HomePageActivity : AppCompatActivity() {
         binding.apply {
 
             btnOk.setOnClickListener {
-               val intent = Intent(this@HomePageActivity, GeoTrackingActivity::class.java)
-                startActivity(intent)
+//               val intent = Intent(this@HomePageActivity, GeoTrackingActivity::class.java)
+//                startActivity(intent)
 
-//                LibConstant().libFun(this@HomePageActivity)
+                LibConstant().libFun(this@HomePageActivity)
 
 
 
