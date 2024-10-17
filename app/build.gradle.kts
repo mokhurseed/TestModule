@@ -65,7 +65,7 @@ dependencies {
     implementation(libs.androidx.ui.graphics)
     implementation(libs.androidx.ui.tooling.preview)
     implementation(libs.androidx.material3)
-    implementation(files("C:\\Users\\khurseeda\\OneDrive\\Desktop\\2024\\geotracking-debug.aar"))
+//    implementation(files("C:\\Users\\khurseeda\\OneDrive\\Desktop\\2024\\geotracking-debug.aar"))
     implementation(project(":mylibrary"))
 //    implementation(libs.x.x)
     testImplementation(libs.junit)
